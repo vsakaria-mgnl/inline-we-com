@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="./css/inline.css" />
 
 		<title>My Web Project</title>
 		<!-- Load Lit from a CDN -->
@@ -50,166 +51,6 @@
 
 				render() {
 					return html`
-						<style>
-							.ce-toolbar__plus {
-								display: none;
-							}
-
-							.ce-toolbar .ce-toolbar__settings-btn {
-								background-color: black;
-								margin-top: 11px;
-								width: 35px;
-								height: 35px;
-							}
-
-							.ce-toolbar .ce-toolbar__settings-btn:hover {
-								background-color: green;
-							}
-
-							.ce-toolbar .ce-toolbar__settings-btn path {
-								stroke: white;
-							}
-
-							svg {
-								fill: black !important;
-							}
-
-							svg path {
-								stroke: white;
-							}
-
-							.codex-editor__redactor {
-								padding: 0 !important;
-							}
-
-							#mgnl-ai-editor {
-								// border: 3px solid red;
-								width: 600px;
-								margin: auto;
-								padding: 5px 50px;
-							}
-
-							.ce-paragraph {
-								line-height: 2.6em !important;
-								font-size: 22px;
-							}
-
-							.ce-inline-toolbar {
-								background-color: black;
-							}
-
-							.ce-inline-toolbar__buttons .ce-inline-tool {
-								background-color: black;
-							}
-
-							.ce-inline-toolbar__buttons .ce-inline-tool:hover {
-								background-color: green;
-							}
-
-							.ce-inline-toolbar__buttons .ce-inline-tool svg {
-								fill: black !important;
-							}
-
-							.ce-inline-toolbar__buttons
-								.ce-inline-tool
-								svg
-								path {
-								stroke: white;
-							}
-
-							.ce-inline-toolbar__toggler-and-button-wrapper {
-								padding: 0;
-							}
-
-							.ce-inline-tool {
-								height: 46px;
-								width: 46px;
-							}
-
-							.ce-inline-toolbar__buttons
-								.ce-inline-tool:first-child {
-								border-top-left-radius: 6px;
-								border-bottom-left-radius: 6px;
-							}
-
-							.ce-inline-toolbar__buttons
-								.ce-inline-tool:last-child {
-								border-top-right-radius: 6px;
-								border-bottom-right-radius: 6px;
-							}
-
-							.ce-popover {
-								background-color: black;
-								width: 300px;
-							}
-
-							.ce-popover__search .cdx-search-field__icon svg {
-								fill: white;
-							}
-
-							.ce-popover__search .cdx-search-field__input {
-								color: white;
-								background-color: black;
-							}
-
-							.ce-popover__items .ce-popover-item {
-								color: white;
-								height: 45px;
-							}
-
-							.ce-popover__items .ce-popover-item:hover {
-								background-color: green;
-							}
-
-							.ce-popover__items .ce-popover-item__title {
-								color: white;
-								font-size: 16px;
-								font-family: sans-serif;
-							}
-
-							.cdx-search-field__input {
-								color: black;
-								background-color: white;
-							}
-
-							.cdx-search-field__input::placeholder {
-								color: grey;
-							}
-
-							.cdx-search-field__icon svg {
-								fill: black;
-							}
-
-							.cdx-search-field {
-								background-color: white;
-							}
-
-							.ce-popover__search .cdx-search-field__icon {
-								padding: 8px 0;
-							}
-
-							.ce-popover__search .cdx-search-field__input {
-								color: black;
-								background-color: white;
-								padding: 8px 0;
-								font-size: 16px;
-								font-family: sans-serif;
-							}
-
-							.ct__content {
-								padding: 17px 22px;
-								color: #ffffff;
-								font-size: 16px;
-								text-align: center;
-								letter-spacing: 0.02em;
-								line-height: 1.5em;
-								font-family: sans-serif;
-							}
-
-							.cdx-search-field__icon svg {
-								fill: white !important;
-							}
-						</style>
 						<div id="mgnl-ai-editor" contenteditable="true"></div>
 					`;
 				}
@@ -219,12 +60,8 @@
 		</script>
 	</head>
 	<body>
-		<!-- Use your Lit component -->
 		<ai-component></ai-component>
 
-		<!-- Your existing script file -->
-		<!-- <script src="js/script.js"></script> -->
 		<script src="/js/AiParagraph.js"></script>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/@editorjs/paragraph@latest"></script> -->
 	</body>
 </html>
